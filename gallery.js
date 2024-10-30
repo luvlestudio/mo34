@@ -46,9 +46,9 @@ window.onload = () => {
     Kakao.Share.sendDefault({
       objectType: "feed",
       content: {
-        title: "성동기 ♥ 이혜빈의 모바일 청첩장",
-        description: "결혼식에 초대합니다♡",
-        imageUrl: "https://i.imgur.com/gaYDmZa.png",
+        title: "용광 ♥ 민선의 모바일 청첩장",
+        description: "2025년 1월 5일 일요일♡",
+        imageUrl: "https://i.imgur.com/2u0XeLq.png",
         imageWidth: 1200,
         imageHeight: 630,
         link: {
@@ -117,10 +117,11 @@ window.onload = () => {
     window.location.href = link;
   });
 
-  // BGM
+  //BGM
   const playButton = document.getElementById("playButton");
   const audio = document.getElementById("bgm");
-  playButton.src = "img/play.png"; // 초기 상태는 play.png
+  // 초기 상태는 play.png
+  playButton.src = "img/play.png";
   playButton.addEventListener("click", function () {
     if (audio) {
       // 현재 오디오가 재생 중인지 여부를 확인
